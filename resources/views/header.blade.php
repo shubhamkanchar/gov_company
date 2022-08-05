@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="public/assets/css/animated.css">
   <link rel="stylesheet" href="public/assets/css/owl.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
 
   <style>
     body{
@@ -65,7 +66,7 @@
     }
     .text-imp {
       color: black !important;
-      padding-left: 5px !important;
+      padding-left: 28px !important;
       padding-right: 15px !important;
     }
 
@@ -133,6 +134,12 @@
   100% {
      background-position: 0% 50%;
   }
+}
+.hidden{
+  display: none;
+} 
+.mr-1{
+  margin-right: 10px;
 }
   </style>
 </head>

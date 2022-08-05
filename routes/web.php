@@ -90,3 +90,5 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::post('send-mail', [App\Http\Controllers\MailController::class, 'mail_sent'])->name('mail_sent');
+
+Route::post('send-sub', [App\Http\Controllers\MailController::class, 'mail_sub'])->name('mail_sub');

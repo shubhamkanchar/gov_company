@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\subscribe;
 use Illuminate\Http\Request;
 
 class MailController extends Controller
@@ -20,6 +21,25 @@ class MailController extends Controller
         return json_encode([
             'status'=>1,
             'msg'=>'mail sent'
+        ]);
+    }
+
+    public function mail_sub(Request $request) {
+   
+        $details = [
+            'email' => $request->email,
+            'name' => $request->name
+        ];
+        
+        $count=subscribe::where('email',$request->email)->count();
+
+        if($count == 0):
+            subscribe::create($details);
+        endif;
+
+        return json_encode([
+            'status'=>1,
+            'msg'=>'subscribed successfully'
         ]);
     }
 }

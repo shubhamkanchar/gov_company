@@ -20,7 +20,7 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <h6>{{ config('about.full_name') }}</h6>
-                      <h2>Welcomme to {{ config('about.company_name') }}</h2>
+                      <h2>Welcome to {{ config('about.company_name') }}</h2>
                       <p> {{ config('about.company_name') }} Technologies are one of the India's leading digital marketing, website design and web development company. We provide time bound, cost effective and value added services for technology innovative business solutions that require specialized domain expertise. Thank you.</p>
                     </div>
                     <div class="col-lg-12">
@@ -311,21 +311,22 @@
             </div>
           </div>
           <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-            <form id="search" action="#" method="GET">
+            <form id="search" method="post" action="{{ route('mail_sub') }}">
+              @csrf
               <div class="row">
                 <div class="col-lg-4 col-sm-4">
                   <fieldset>
-                    <input type="web" name="web" class="website" placeholder="Your website URL..." autocomplete="on" required>
+                    <input type="text" name="name" class="name" placeholder="Full Name " autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <fieldset>
-                    <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                    <input type="email" name="email" class="email" placeholder="Email Address" autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <fieldset>
-                    <button type="submit" class="main-button">Get Quote Now</button>
+                    <button type="submit" class="main-button"><i class="fa fa-circle-o-notch fa-spin hidden mr-1 fa-spin-call"></i>Subscribe</button>
                   </fieldset>
                 </div>
               </div>
@@ -356,7 +357,7 @@
               <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
               <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
               <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-              <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+              <div class="slide"><img src="https://img.freepik.com/free-vector/premium-collection-badge-design_53876-63011.jpg?w=740&t=st=1659635460~exp=1659636060~hmac=018367f144a73cb2c5bc1a25026e29449bf013aeba2c2fcbabf08189d5541ce2"></div>
             </section>
           </div>
         </div>
@@ -570,7 +571,7 @@
                 </div>
                 <div class="col-lg-5">
                   <div id="map">
-                    <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8818206626024!2d73.81272922389253!3d18.48901154721366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe631fc9f7f%3A0x40bae74e7709affa!2sFusion%20Software%20Training%20Institute%20Pune!5e0!3m2!1sen!2sin!4v1659635677627!5m2!1sen!2sin" width="100%" height="636px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
                 <div class="col-lg-7">
@@ -618,7 +619,7 @@
                       </div>
                       <div class="col-lg-12">
                         <fieldset>
-                          <button type="submit" id="form-submit" class="main-button ">Send Message Now</button>
+                          <button type="submit" id="form-submit" class="main-button "><i class="fa fa-circle-o-notch fa-spin hidden mr-1 fa-spin-visit"></i>Send Message Now</button>
                         </fieldset>
                       </div>
                     </div>

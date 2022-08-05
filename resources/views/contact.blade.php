@@ -1,15 +1,12 @@
 @include('header')
-
-<!-- ***** Header Area Start ***** -->
 @include('navbar')
-<!-- ***** Header Area End ***** -->
 <style>
-      .main-banner {
+  .main-banner {
 
-        padding: 100px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
 
-      }
-    </style>
+  }
+</style>
 <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
   <div class="container">
     <div class="row">
@@ -19,7 +16,7 @@
             <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
               <div class="row">
                 <div class="col-lg-12">
-                <h6>{{ config('about.full_name') }}</h6>
+                  <h6>{{ config('about.full_name') }}</h6>
                   <h2>Contact {{ config('about.company_name') }}</h2>
                   <p>GreatEWay Technologies are one of the India's leading digital marketing, website design and web development company. we love to hear from you please feel free to contact us Thank you.</p>
                 </div>
@@ -43,7 +40,7 @@
 </div>
 
 
-<div  class="contact-us section">
+<div class="contact-us section">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 offset-lg-3">
@@ -64,7 +61,7 @@
             </div>
             <div class="col-lg-5">
               <div id="map">
-                <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8818206626024!2d73.81272922389253!3d18.48901154721366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe631fc9f7f%3A0x40bae74e7709affa!2sFusion%20Software%20Training%20Institute%20Pune!5e0!3m2!1sen!2sin!4v1659635677627!5m2!1sen!2sin" width="100%" height="636px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <div class="col-lg-7">
@@ -112,7 +109,7 @@
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="main-button ">Send Message Now</button>
+                      <button type="submit" id="form-submit" class="main-button "><i class="fa fa-circle-o-notch fa-spin hidden mr-1 fa-spin-visit"></i>Send Message Now</button>
                     </fieldset>
                   </div>
                 </div>
