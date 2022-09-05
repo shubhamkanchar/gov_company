@@ -72,6 +72,7 @@
                       <div class="icon">
                         <img src="public/assets/images/phone-icon.png" alt="">
                         <a href="#">{{ config('about.mobile1')}}</a>
+                        <a href="#">{{ config('about.mobile2')}}</a>
                       </div>
                     </div>
                   </div>
